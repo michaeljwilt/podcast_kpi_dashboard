@@ -139,7 +139,7 @@ with st.container(border=True):
 
     col1.metric("Total Listen Time", f"{current_listen_time:,}", f"↑ {listen_time_diff:.0f}%")
     col2.metric("Total Listeners", f"{current_listeners:,}", f"↑ {listeners_diff:.0f}%")
-    col3.metric("Total Downloads", f"{current_downloads:,}", f"↑ {downloads_diff:.0f}%")
+    col3.metric("Total Downloads", f"{int(current_downloads):,}", f"↑ {downloads_diff:.0f}%")
     
 st.header("")
 #---------------Graphs---------------#
